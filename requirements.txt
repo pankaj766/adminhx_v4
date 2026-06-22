@@ -1,0 +1,6 @@
+flask
+psutil
+requests
+aiohttp
+PyJWT
+pycryptodome
