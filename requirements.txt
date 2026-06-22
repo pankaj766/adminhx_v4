@@ -4,3 +4,4 @@ requests
 aiohttp
 PyJWT
 pycryptodome
+flask_socketio
