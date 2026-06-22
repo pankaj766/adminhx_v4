@@ -48,7 +48,7 @@ def init_db():
     )''')
     
     if not db.execute('SELECT * FROM admin_settings WHERE id=1').fetchone():
-        db.execute('INSERT INTO admin_settings (id, username, password) VALUES (1, "neverexits", "1100")')
+        db.execute('INSERT INTO admin_settings (id, username, password) VALUES (1, "max", "max")')
     
     db.commit()
     db.close()
@@ -613,4 +613,4 @@ def create_app():
 app = create_app()
 
 if __name__ == "__main__":
-    socketio.run(app, host='0.0.0.0', port=5000, debug=True)
+    socketio.run(app, host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=False, allow_unsafe_werkzeug=True)

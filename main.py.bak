@@ -7,16 +7,6 @@ from flask_socketio import SocketIO, emit
 running_procs = {}
 start_times = {}
 
-
-cd /storage/emulated/0/Android/SH
-git init
-git config --global --add safe.directory /storage/emulated/0/Android/SH
-git add .
-git commit -m "upload"
-git remote add origin https://github.com/pankaj766/adminhx_v4.git
-git branch -M main
-git push -u origin main --force
-
 # Initialize SocketIO
 socketio = SocketIO()
 
