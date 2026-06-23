@@ -5,3 +5,10 @@ aiohttp
 PyJWT
 pycryptodome
 flask_socketio
+httpx
+google
+protobuf
+urllib3
+protobuf-decoder
+pytz
+cfonts
